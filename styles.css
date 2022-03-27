@@ -1,6 +1,6 @@
 .contact-info {
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     padding-left: 30px;
     padding-top: 25px;
 }
@@ -11,9 +11,11 @@ p.low-line {
 
 .references {
     color: white;
-    font-size: 24px;
+    font-size: 16px;
     padding-left: 30px;
     padding-top: 25px;
+    display: inline-block;
+    align-self: end;
 }
 
 .name_title {
@@ -61,12 +63,28 @@ h1 {
         grid-gap: 1vw;
       }
 }
+@media screen and (min-width: 1100px) {
+    .contact-info {
+        color: white;
+        font-size: 24px;
+        padding-left: 30px;
+        padding-top: 25px;
+    }
+
+    .references {
+        color: white;
+        font-size: 24px;
+        padding-left: 30px;
+        padding-top: 25px;
+        display: inline-block;
+        align-self: end;
+    }
+}
 
 .sidebar {
     background-color: rgb(71, 80, 87);
     border-radius: 5px;
-    display: flex;
-    height: 100%;
+    display: grid;
     grid-row: 1 / 10;
 }
 .grid-item {
