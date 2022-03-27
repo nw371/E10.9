@@ -1,0 +1,25 @@
+
+.item-1 {
+    background-color: rgb(161, 48, 48);
+    grid-row: 1 / 4;
+}
+
+.item-2 {
+    background-color: rgb(49, 163, 68);
+}
+
+.item-3 {
+    background-color: rgb(49, 20, 68);
+}
+
+.item-4 {
+    background-color: rgb(100, 20, 68);
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+  }
+.grid-item {
+    min-height: 100px;
+}
