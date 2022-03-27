@@ -1,23 +1,34 @@
 
 .sidebar {
     background-color: rgb(71, 80, 87);
+    border-radius: 5px;
     grid-row: 1 / 8;
 }
 
 .name_title {
     background-color: rgb(189, 195, 199);
+    border-radius: 5px;
 }
 
 .work_experience {
     background-color: rgb(234, 236, 239);
+    border-radius: 5px;
 }
 
 .education {
     background-color: rgb(189, 195, 199);
+    border-radius: 5px;
 }
 
 .skills {
     background-color: rgb(234, 236, 239);
+    border-radius: 5px;
+}
+
+.section-header{
+font-size: 18px;
+text-align: center
+
 }
 .grid-wrapper {
     display: grid;
@@ -28,3 +39,23 @@
 .grid-item {
     min-height: 100px;
 }
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 1px; /* Add top padding */
+  padding-bottom: 1px; /* Add bottom padding */
+  color: black; /* White text color */
+}
+
+.python {width: 90%;   background-image: linear-gradient(to top left, #79ebe0 0%, #fff 100%);} /* Green */
+.django {width: 80%;  background-image: linear-gradient(45deg, #fb7ef6 0%, #cbabfb 60%);} /* Blue */
+.js {width: 65%; background-image: linear-gradient(45deg, #cbabfb 0%, #fb7ef6 60%);} /* Red */
+.css_html {width: 60%; background-image: linear-gradient(45deg, #79ebe0 0%, #70c1fb 60%);} /* Dark Grey */
