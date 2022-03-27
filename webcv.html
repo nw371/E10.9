@@ -8,11 +8,16 @@
 <body>
 <div class="grid-wrapper">
     <div class="grid-item sidebar"></div>
-    <div class="grid-item name_title"></div>
-    <div class="grid-item work_experience">
+    <div class="grid-item name_title">
+        <h1>NAME SURNAME</h1>
+    </div>
+    <button type="button" class="collapsible">
         <div class="section-header">
             <p>Work Experience</p>
         </div>
+    </button>
+    <div class="content">
+        <div class="grid-item work_experience">
         <div class="timeline">
             <div class="container-timelime left">
                 <div class="content">
@@ -28,15 +33,23 @@
             </div>
         </div>
     </div>
-    <div class="grid-item education">
+    </div>
+        <button type="button" class="collapsible">
         <div class="section-header">
             <p>Education</p>
         </div>
+    </button>
+    <div class="content">
+        <div class="grid-item education">
     </div>
-    <div class="grid-item skills">
+    </div>
+        <button type="button" class="collapsible">
         <div class="section-header">
             <p>Skills</p>
         </div>
+    </button>
+    <div class="content">
+        <div class="grid-item skills">
         <p>Python</p>
         <div class="container-skills">
             <div class="skills python">90%</div>
@@ -54,6 +67,26 @@
             <div class="skills css_html">60%</div>
         </div>
     </div>
+    </div>
 </div>
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
