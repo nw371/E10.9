@@ -1,17 +1,19 @@
-
-
-.contact-info{
-color: white;
-font-size: 24px;
-padding-left: 30px;
-padding-top: 25px;
+.contact-info {
+    color: white;
+    font-size: 24px;
+    padding-left: 30px;
+    padding-top: 25px;
 }
-p.low-line{
-line-height: 0.6;
 
+p.low-line {
+    line-height: 0.6;
 }
-.bi-telephone{
-font-size: 24px;
+
+.references {
+    color: white;
+    font-size: 24px;
+    padding-left: 30px;
+    padding-top: 25px;
 }
 
 .name_title {
@@ -19,7 +21,7 @@ font-size: 24px;
     border-radius: 5px;
 }
 
-.work_experience {
+.work_experience  {
     background-color: rgb(234, 236, 239);
     border-radius: 5px;
 }
@@ -34,13 +36,14 @@ font-size: 24px;
     border-radius: 5px;
     padding: 0px 30px 30px 30px;
 }
-h1 {
-text-align: center
-}
-.section-header{
-font-size: 18px;
-text-align: center
 
+h1 {
+    text-align: center
+}
+
+.section-header{
+    font-size: 18px;
+    text-align: center
 }
 
  .grid-wrapper {
@@ -51,17 +54,19 @@ text-align: center
   }
 
  @media screen and (min-width: 750px) {
- .grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    grid-gap: 1vw;
-  }
+     .grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-gap: 1vw;
+      }
 }
 
 .sidebar {
     background-color: rgb(71, 80, 87);
     border-radius: 5px;
+    display: flex;
+    height: 100%;
     grid-row: 1 / 10;
 }
 .grid-item {
@@ -219,24 +224,41 @@ text-align: center
 
 /*SKILL BAR CSS*/
 /* Make sure that padding behaves as expected */
-* {box-sizing:border-box}
+* {
+    box-sizing:border-box
+}
 
 /* Container for skill bars */
 .container-skills {
-  width: 100%; /* Full width */
-  background-color: #ddd; /* Grey background */
+  width: 100%;
+  background-color: #ddd;
 }
 
 .skills {
-  text-align: right; /* Right-align text */
-  padding-top: 5px; /* Add top padding */
-  padding-bottom: 5px; /* Add bottom padding */
-  color: black; /* White text color */
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
 }
 
-.python {width: 90%;   background-image: linear-gradient(to top left, #79ebe0 0%, #fff 100%);} /* Green */
-.django {width: 80%;  background-image: linear-gradient(45deg, #fb7ef6 0%, #cbabfb 60%);} /* Blue */
-.js {width: 65%; background-image: linear-gradient(45deg, #cbabfb 0%, #fb7ef6 60%);} /* Red */
-.css_html {width: 60%; background-image: linear-gradient(45deg, #79ebe0 0%, #70c1fb 60%);} /* Dark Grey */
+.python {
+    width: 90%;
+    background-image: linear-gradient(to top left, #79ebe0 0%, #fff 100%);
+}
+
+.django {
+    width: 80%;
+    background-image: linear-gradient(45deg, #fb7ef6 0%, #cbabfb 60%);
+}
+
+.js {
+    width: 65%;
+    background-image: linear-gradient(45deg, #cbabfb 0%, #fb7ef6 60%);
+}
+
+.css_html {
+    width: 60%;
+    background-image: linear-gradient(45deg, #79ebe0 0%, #70c1fb 60%);
+}
 
 
