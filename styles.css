@@ -4,6 +4,19 @@
     border-radius: 5px;
     grid-row: 1 / 8;
 }
+.contact-info{
+color: white;
+font-size: 24px;
+padding-left: 30px;
+padding-top: 25px;
+}
+p.low-line{
+line-height: 0.6;
+
+}
+.bi-telephone{
+font-size: 24px;
+}
 
 .name_title {
     background-color: rgb(189, 195, 199);
