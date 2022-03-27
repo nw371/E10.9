@@ -1,9 +1,5 @@
 
-.sidebar {
-    background-color: rgb(71, 80, 87);
-    border-radius: 5px;
-    grid-row: 1 / 8;
-}
+
 .contact-info{
 color: white;
 font-size: 24px;
@@ -36,6 +32,7 @@ font-size: 24px;
 .skills {
     background-color: rgb(234, 236, 239);
     border-radius: 5px;
+    padding: 0px 30px 30px 30px;
 }
 h1 {
 text-align: center
@@ -45,14 +42,31 @@ font-size: 18px;
 text-align: center
 
 }
-.grid-wrapper {
+
+ .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr repeat(auto-fit, minmax(200px, 2fr));
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+  }
+
+ @media screen and (min-width: 750px) {
+ .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     grid-gap: 1vw;
   }
+}
+
+.sidebar {
+    background-color: rgb(71, 80, 87);
+    border-radius: 5px;
+    grid-row: 1 / 10;
+}
 .grid-item {
     min-height: 100px;
+    min-width: 300px;
 }
 /*COLLAPSIBLE*/
 .collapsible {
@@ -215,8 +229,8 @@ text-align: center
 
 .skills {
   text-align: right; /* Right-align text */
-  padding-top: 1px; /* Add top padding */
-  padding-bottom: 1px; /* Add bottom padding */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
   color: black; /* White text color */
 }
 
